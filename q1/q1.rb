@@ -18,15 +18,15 @@ class Class
 
                 end
             end
+            def history (name)
+                print @#{name}_history
+            end
         "
     end
 end
 
 class Foo
     attr_accessor_with_history :bar
-    def history (name)
-        print bar_history
-    end
 end
 
 f = Foo.new         # => #<Foo:0x127e678>
